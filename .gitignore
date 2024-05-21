@@ -1,0 +1,111 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Diretórios de dependências
+node_modules/
+
+# Diretórios de build
+build/
+dist/
+
+# Arquivos de configuração de editores
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Arquivos de sistema operacional
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Dependências de pacotes gerenciados
+node_modules/
+jspm_packages/
+
+# Arquivos de compilação de npm
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Teste de saída
+coverage/
+
+# Cache do npm
+.npm
+
+# Cache do Yarn
+.yarn
+.yarnrc.yml
+
+# Cache de verificação de integridade
+.integrity
+
+# Arquivos de ambiente
+.env
+.env.test
+.env.production
+.env.local
+
+# Arquivos de configuração locais
+.local
+.local.*
+
+# Relatórios de erros
+error.log
+error.log.*
+
+# Serviço de teste
+/coverage
+
+# Dependências de pacotes
+/node_modules
+/.pnp
+.pnp.js
+
+# yarn v2
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+
+# Cache do parcel-bundler
+.cache/
+
+# Cache de projeto de build
+.parcel-cache
+
+# Arquivos de configuração do ambiente
+.env
+.env.*
+!.env.example
+
+# Arquivos de configuração de IDE
+/.idea/
+*.iml
+
+# Diretorios de relatório
+/.expo/
+.expo-shared/
+
+# Arquivos de configuração de ferramentas
+.eslintcache
+
+# Arquivos do npm
+package-lock.json
+
+# Arquivos do yarn
+yarn.lock

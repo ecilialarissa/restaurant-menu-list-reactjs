@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="./styles/output.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Crazy Burger</title>
+</head>
+<body>
+
+<!-- HEADER -->
+    <header class="w-full h-[420px]  bg-zinc-900 bg-home bg-cover bg-center"> 
+    <div class="w-full h-full flex flex-col justify-center items-center"> 
+        <img src="./assets/logo.png"
+         class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200"
+         />
+        <h1 class="text-4xl mt-4 mb-2 font-bold text-white ">
+            Crazy Burger
+        </h1>
+    
+    <span class="text-white font-mediumc"> Rua Ana Bilhar, Fortaleza - Ce</span>
+    
+    <div class="border border-gray-500 text-green-500 font-bold py-2 px-4 rounded-md mt-3"> 
+        <span class="font-semibold"> Seg à Dom - 18h às 23h </span>
+    </div>
+
+    </div>
+    </header>
+<!-- FIM HEADER -->
+
+<h2 class="text-2xl md:text-3x1 font-bold text-center mt-9 mb-6"> 
+    Conheça o nosso menu
+</h2>
+
+<!--INCIO MENU-->
+
+<div class=" px-10 content-between" id="menu"> 
+
+
+<main class=" grid grid-cols-1  md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16 " > 
+     
+     <!-- PRODUTO ITEM-->
+     <div class="flex gap-2 "> 
+        <img src="./assets/hamb-1.png" 
+        alt=""
+        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+        />
+
+        <div>
+            <p class="font-bold mb-2"> Clássico Brioche Burger </p>
+            <p class="text-sm"> 
+                Um suculento hambúrguer de carne bovina, queijo cheddar derretido,
+                alface fresca, tomate maduro, cebola roxa e molho de maionese caseira, tudo envolto em um 
+                pão brioche macio e levemente adocicado.</p>
+        <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold"> R$ 18.90</p>
+            <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="Hamburger Smash-1"
+                data-price="18.90"
+            >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+        </div>
+        </div>
+
+
+    </div>
+        <!-- FIM PRODUTO ITEM-->
+
+            <!-- PRODUTO ITEM 2 -->
+    <div class="flex gap-2 "> 
+        <img src="./assets/hamb-2.png" 
+        alt=""
+        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+        />
+
+        <div>
+            <p class="font-bold mb-2"> Bacon Blue Cheese Brioche Burger </p>
+            <p class="text-sm"> 
+                Este hambúrguer é uma explosão de sabores. 
+                Um patty de carne bovina coberto com queijo blue cheese derretido, 
+                fatias crocantes de bacon, cebola caramelizada e uma generosa porção de maionese de alho, servido em um pão brioche dourado.</p>
+        <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold"> R$ 21.90</p>
+            <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="Hamburger Smash-2"
+                data-price="21.90"
+            >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+        </div>
+        </div>
+
+
+    </div>
+        <!-- FIM PRODUTO ITEM 2 -->
+
+        <!-- PRODUTO ITEM 3 -->
+    <div class="flex gap-2 "> 
+        <img src="./assets/hamb-3.png" 
+        alt=""
+        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+        />
+
+        <div>
+            <p class="font-bold mb-2"> Hambúrguer com Queijo Gorgonzola e Cebola Caramelizada:</p>
+            <p class="text-sm">  
+                Para os paladares mais sofisticados, este hambúrguer apresenta um patty de carne bovina suculento, coberto com queijo gorgonzola derretido,
+                cebola caramelizada, rúcula fresca e uma generosa porção de maionese de alho, tudo entre duas fatias de pão brioche levemente tostado.</p>
+        <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold"> R$ 18.90</p>
+            <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="Hamburger Smash-3"
+                data-price="18.90"
+            >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+        </div>
+        </div>
+
+
+    </div>
+        <!-- FIM PRODUTO ITEM 3 -->
+    
+
+        <!-- PRODUTO ITEM 4 -->
+    <div class="flex gap-2 "> 
+        <img src="./assets/hamb-4.png" 
+        alt=""
+        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+        />
+
+        <div>
+            <p class="font-bold mb-2"> Hambúrguer de Frango Grelhado com Abacaxi:</p>
+            <p class="text-sm"> 
+                 Uma opção mais leve, este hambúrguer apresenta um peito de frango grelhado, uma fatia 
+                 suculenta de abacaxi grelhado, alface crocante, tomate fresco e um molho de chipotle, 
+                 tudo entre duas metades de pão brioche.
+                
+        <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold"> R$ 18.90</p>
+            <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="Hamburger Smash-4"
+                data-price="18.90"
+            >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+        </div>
+        </div>
+
+
+    </div>
+        <!-- FIM PRODUTO ITEM  -->
+    
+
+</div>
+</main>
+
+
+<!-- TITULO BEBIDAS-->
+
+<div class="mx-auto max-w-7xl px-2 my-2"> 
+    <h2 class="font-bold text-3xl">
+        Bebidas
+    </h2>
+</div>
+
+<!-- FIM TITULO BEBIDAS-->
+
+
+<!-- GRID BEBIDAS -->
+<div class=" grid grid-cols-1  md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16 " id="menu">  
+
+    <!-- BEBIDA ITEM 1 -->
+    
+    <div class="flex gap-2 w-full "> 
+        <img src="./assets/refri-1.png" 
+        alt=""
+        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+        />
+
+        <div>
+            <p class="font-bold mb-2"> Coca-cola 350ml</p>
+            
+        <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold"> R$ 6</p>
+            <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="Coca-cola"
+                data-price="6"
+            >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+        </div>
+        </div>
+
+
+    </div>
+
+
+    <!-- FIM BEBIDA ITEM 1  -->
+
+    <!-- BEBIDA ITEM 2 -->
+    
+    <div class="flex gap-2 w-full "> 
+        <img src="./assets/refri-2.png" 
+        alt=""
+        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+        />
+
+        <div>
+            <p class="font-bold mb-2"> Guaraná 350ml</p>
+            
+        <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold"> R$ 6</p>
+            <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="Guarana lata"
+                data-price="6"
+            >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+        </div>
+        </div>
+
+
+    </div>
+
+
+    <!-- FIM BEBIDA ITEM 2  -->
+
+
+</div>
+<!-- FIM GRID BEBIDAS -->
+
+
+<!-- MODAL CART -->
+
+<div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99]  items-center justify-center hidden ">
+<div class="bg-white p-5 rounded-md min-w[90%] md:min-w-[600px] "> 
+<h2 class="text-center font-bold text-2xl mb-2">Meu Carrinho </h2>
+
+<div i="cart-items" class="flex justify-between mb-2 flex-col"></div>
+
+<p class="font-bold"> Total: <span id="cart-total">0.00</span></p>
+
+<p class="font-bold mt-4">Endereço de entrega: </p>
+<input type="text"
+placeholder="Digite seu endereço"
+id="address"
+class="w-full border-2 p-1 rounded my-1" 
+/>
+
+<p class="text-red-500 hidden" id="address-warn"> Digite seu endereço completo!</p>
+
+<div class="flex items-center justify-between mt-5 "> 
+    <button id="close-modal-btn"> Fechar </button>
+    <button id="checkout-btn" class="bg-green-500 hover:bg-green-600 text-white px-4 py-1 rounded"> Finalizar pedido </button>
+</div>
+
+</div>
+</div>
+
+<!-- FIM MODAL CART -->
+
+
+<!-- FOOTER -->
+
+<footer class="w-full bg-red-500 py-3 fixed bottom-0 z-40 flex items-center justify-center">
+    <button 
+    class="flex-items-center gap-2 text-white font-bold">
+    (<span id="cart-count"> 2 </span>)
+    Ver carrinho
+    <i class="fa-fa-cart-plus text-lg text-white"></i>
+    </button>
+</footer>
+
+<!-- FIM FOOTER -->
+
+</body>
+</html>
