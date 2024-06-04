@@ -2,4 +2,4 @@
  
  ## :rocket:  Veja em produção: 
 
-✨ [CLIQUE AQUI](https://restaurant-menu-list-react-n4i5tgknj-ecilialarissas-projects.vercel.app/)
+✨ [CLIQUE AQUI](https://restaurant-menu-list-react-fs6fwvdqj-ecilialarissas-projects.vercel.app)
