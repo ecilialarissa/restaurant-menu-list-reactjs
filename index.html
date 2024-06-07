@@ -70,7 +70,7 @@
 
 
     </div>
-        <!-- FIM PRODUTO ITEM-->
+        <!-- FIM PRODUTO ITEM 1 -->
 
             <!-- PRODUTO ITEM 2 -->
     <div class="flex gap-2 "> 
@@ -161,7 +161,7 @@
         <!-- FIM PRODUTO ITEM  -->
     
 
-</div>
+
 </main>
 
 
@@ -193,8 +193,8 @@
         <div class="flex items-center gap-2 justify-between mt-3">
             <p class="font-bold"> R$ 6</p>
             <button 
-                class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                data-name="Coca-cola"
+                class="bg-gray-900 px-5 rounded add-to-cart-btn" id="add-to-cart-btn"
+                data-name="Coca cola"
                 data-price="6"
             >
                 <i class="fa fa-cart-plus text-lg text-white"></i>
@@ -222,10 +222,10 @@
         <div class="flex items-center gap-2 justify-between mt-3">
             <p class="font-bold"> R$ 6</p>
             <button 
-                class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                data-name="Guarana lata"
-                data-price="6"
-            >
+            class="bg-gray-900 px-5 rounded add-to-cart-btn"
+            data-name="Guarana"
+            data-price="6"
+        >
                 <i class="fa fa-cart-plus text-lg text-white"></i>
             </button>
         </div>
@@ -240,11 +240,13 @@
 
 </div>
 <!-- FIM GRID BEBIDAS -->
-
+</div>
 
 <!-- MODAL CART -->
 
-<div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99]  items-center justify-center hidden ">
+<div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99]  items-center justify-center hidden "
+    id="cart-modal"
+>
 <div class="bg-white p-5 rounded-md min-w[90%] md:min-w-[600px] "> 
 <h2 class="text-center font-bold text-2xl mb-2">Meu Carrinho </h2>
 
@@ -276,14 +278,18 @@ class="w-full border-2 p-1 rounded my-1"
 
 <footer class="w-full bg-red-500 py-3 fixed bottom-0 z-40 flex items-center justify-center">
     <button 
-    class="flex-items-center gap-2 text-white font-bold">
-    (<span id="cart-count"> 2 </span>)
+    class="flex-items-center gap-2 text-white font-bold"
+    id="cart-btn"
+    >
+    (<span id="cart-count"> 0 </span>)
     Ver carrinho
     <i class="fa-fa-cart-plus text-lg text-white"></i>
     </button>
 </footer>
 
 <!-- FIM FOOTER -->
+
+<script src="script.js"></script>
 
 </body>
 </html>
