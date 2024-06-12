@@ -10,6 +10,7 @@ const addressInput = document.getElementById("address")
 const addressWarn = document.getElementById("address-warn")
 
 
+
 let cart = [];
 
 // abrir modal carrinho
@@ -135,27 +136,71 @@ function removeItemCart(name){
     }
 }
 
-// input endereço 
-    checkoutBtn.addEventListener("input", function(event){
-        let inputValue = event.target.value;
+// validação do inputAddress 
+addressInput.addEventListener("input", function(event){
+    let inputValue = event.target.value;
 
-        // verificação do campo endereço 
+    if(inputValue !== ""){
+        addressInput.classList.remove("border-red-600")
+        addressWarn.classList.add("hidden")
+    }
 
 
-    })
+})
 
 
-//finalizar pedido 
-
+//Finalizar pedido
 checkoutBtn.addEventListener("click", function(){
-    if (cart.length === 0)
-        return;
+
+     const isOpen = checkRestaurantOpen();
+     if(!isOpen){
+     alert("Restaurante fechado no momento!")
+     return;
+     }
+
+
+    if(cart.length === 0) return(alert("Seu carrinho está vazio! Volte e adicione um pedido!"));
     if(addressInput.value === ""){
         addressWarn.classList.remove("hidden")
-        addressInput.classList.add("border-red-500")
-        
+        addressInput.classList.add("border-red-600")
+        return;
     }
-    
-})
-    
 
+    //Eviar api whatsapp
+    const cartItems = cart.map((item) => {
+        return(
+            ` ${item.name} Quantidade: (${item.quantity}) Preço: (${item.price})`
+        )
+    }).join("")
+    const message = encodeURIComponent(cartItems)
+    const phone = "85999069335"
+
+    window.open(`https://wa.me/${phone}?text=${message} Endereço: ${addressInput.value}`, "_blank")
+})
+   
+
+//função de verificação de horário de funcionamento
+function checkRestaurantOpen(){
+    const agora = new Date(); // Cria um novo objeto Date com a data e hora atuais
+
+    const horas = agora.getHours(); // Obtém a hora (0-23)
+    const minutos = agora.getMinutes(); // Obtém os minutos (0-59)
+    const segundos = agora.getSeconds(); // Obtém os segundos (0-59)
+    
+    return horas>=18 && horas < 23;
+}
+
+
+const spantItem = document.getElementById("date-span")
+const isOpen = checkRestaurantOpen();
+
+
+
+if(isOpen){
+    spantItem.classList.add("bg-green-600")
+    
+    
+}else{
+    spantItem.classList.remove("bg-green-600")
+    spantItem.classList.add("bg-red-600")
+}
