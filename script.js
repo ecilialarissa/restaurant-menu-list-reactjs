@@ -154,7 +154,7 @@ checkoutBtn.addEventListener("click", function(){
 
      const isOpen = checkRestaurantOpen();
      if(!isOpen){
-     alert("Restaurante fechado no momento!")
+     alert("Restaurante fechado no momento! Abrimos às 18h!")
      return;
      }
 
@@ -181,26 +181,20 @@ checkoutBtn.addEventListener("click", function(){
 
 //função de verificação de horário de funcionamento
 function checkRestaurantOpen(){
-    const agora = new Date(); // Cria um novo objeto Date com a data e hora atuais
+    const data = new Date();
+    const hora = data.getHours();
+    return hora >= 18 && hora < 22;
 
-    const horas = agora.getHours(); // Obtém a hora (0-23)
-    const minutos = agora.getMinutes(); // Obtém os minutos (0-59)
-    const segundos = agora.getSeconds(); // Obtém os segundos (0-59)
-    
-    return horas>=18 && horas < 23;
 }
 
-
-const spantItem = document.getElementById("date-span")
+const spanItem = document.getElementById("date-span")
 const isOpen = checkRestaurantOpen();
 
-
-
 if(isOpen){
-    spantItem.classList.add("bg-green-600")
-    
-    
+    spanItem.classList.remove("bg-red-500");
+    spanItem.classList.add("bg-green-600")
+
 }else{
-    spantItem.classList.remove("bg-green-600")
-    spantItem.classList.add("bg-red-600")
+    spanItem.classList.remove("bg-red-500");
+    spanItem.classList.add("bg-red-500")
 }
