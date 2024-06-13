@@ -173,7 +173,7 @@ checkoutBtn.addEventListener("click", function(){
         )
     }).join("")
     const message = encodeURIComponent(cartItems)
-    const phone = "85999069335"
+    const phone = "5585999069335"
 
     window.open(`https://wa.me/${phone}?text=${message} Endereço: ${addressInput.value}`, "_blank")
 })
@@ -191,10 +191,11 @@ const spanItem = document.getElementById("date-span")
 const isOpen = checkRestaurantOpen();
 
 if(isOpen){
-    spanItem.classList.remove("bg-red-500");
-    spanItem.classList.add("bg-green-600")
+    spanItem.classList.remove("bg-red-500")
+    spanItem.classList.add("bg-green-500")
+    
 
 }else{
-    spanItem.classList.remove("bg-red-500");
+    spanItem.classList.remove("bg-green-500");
     spanItem.classList.add("bg-red-500")
 }
